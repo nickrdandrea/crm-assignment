@@ -1,3 +1,15 @@
+# MiniTest Results
+# Run options: --seed 8873
+
+# Running:
+
+# ..Grace Hopper
+# .....
+
+# Fabulous run in 0.000907s, 7715.1735 runs/s, 7715.1735 assertions/s.
+
+# 7 runs, 7 assertions, 0 failures, 0 errors, 0 skips
+
 class Contact
   attr_reader :id
   attr_accessor :first_name, :last_name, :email, :note
