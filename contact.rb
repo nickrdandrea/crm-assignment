@@ -48,7 +48,7 @@ class Contact
   # by specifying both the name of the attribute and the value
   # eg. searching for 'first_name', 'Betty' should return the first contact named Betty
   def self.find_by(attribute, value)
-    @@contacts.each { |c|  return c.first_name if c.send(attribute) == value }
+    @@contacts.find { |c|  return c if c.send(attribute).upcase == value.upcase }
   end
 
   # This method should delete all of the contacts
