@@ -65,14 +65,6 @@ class Contact
   def delete
     @@contacts.delete(self)
   end
-
-  def foo
-    attribute = "first_name"
-    value = "Mary"
-    #@@contacts.find { |c| c if c.send("#{attribute}=", value) }
-    self.send("#{attribute}=", value)
-  end
-
   # Feel free to add other methods here, if you need them.
 end
 
